@@ -1,0 +1,5 @@
+D:\VS2019Project\.NET图书项目实战\LabraryModel\bin\Debug\LabraryModel.dll
+D:\VS2019Project\.NET图书项目实战\LabraryModel\bin\Debug\LabraryModel.pdb
+D:\VS2019Project\.NET图书项目实战\LabraryModel\obj\Debug\LabraryModel.csproj.CoreCompileInputs.cache
+D:\VS2019Project\.NET图书项目实战\LabraryModel\obj\Debug\LabraryModel.dll
+D:\VS2019Project\.NET图书项目实战\LabraryModel\obj\Debug\LabraryModel.pdb

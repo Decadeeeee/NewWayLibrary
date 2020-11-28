@@ -1,0 +1,11 @@
+D:\VS2019Project\.NET图书项目实战\Library.DAL\bin\Debug\Library.DAL.dll
+D:\VS2019Project\.NET图书项目实战\Library.DAL\bin\Debug\Library.DAL.pdb
+D:\VS2019Project\.NET图书项目实战\Library.DAL\bin\Debug\Labrary.Models.dll
+D:\VS2019Project\.NET图书项目实战\Library.DAL\bin\Debug\Labrary.Models.pdb
+D:\VS2019Project\.NET图书项目实战\Library.DAL\obj\Debug\Library.DAL.csprojAssemblyReference.cache
+D:\VS2019Project\.NET图书项目实战\Library.DAL\obj\Debug\Library.DAL.csproj.CoreCompileInputs.cache
+D:\VS2019Project\.NET图书项目实战\Library.DAL\obj\Debug\Library.DAL.csproj.CopyComplete
+D:\VS2019Project\.NET图书项目实战\Library.DAL\obj\Debug\Library.DAL.dll
+D:\VS2019Project\.NET图书项目实战\Library.DAL\obj\Debug\Library.DAL.pdb
+D:\VS2019Project\.NET图书项目实战\Library.DAL\bin\Debug\Library.View.Models.dll
+D:\VS2019Project\.NET图书项目实战\Library.DAL\bin\Debug\Library.View.Models.pdb

@@ -1,0 +1,9 @@
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\obj\Debug\Library.View.Models.csprojAssemblyReference.cache
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\obj\Debug\Library.View.Models.csproj.CoreCompileInputs.cache
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\bin\Debug\Library.View.Models.dll
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\bin\Debug\Library.View.Models.pdb
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\bin\Debug\Labrary.Models.dll
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\bin\Debug\Labrary.Models.pdb
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\obj\Debug\Library.View.Models.csproj.CopyComplete
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\obj\Debug\Library.View.Models.dll
+D:\VS2019Project\.NET图书项目实战\Library.View.Model\obj\Debug\Library.View.Models.pdb
