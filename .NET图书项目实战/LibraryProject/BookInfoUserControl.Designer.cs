@@ -1,4 +1,6 @@
-﻿namespace LibraryProject
+﻿using System.Windows.Forms;
+
+namespace LibraryProject
 {
     partial class BookInfoUserControl
     {
@@ -30,11 +32,11 @@
         {
             this.BookCoverpictureBox = new System.Windows.Forms.PictureBox();
             this.booknamelabel = new System.Windows.Forms.Label();
-            this.ISBNlabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.authorlabel = new System.Windows.Forms.Label();
             this.ISBNnumlabel = new System.Windows.Forms.Label();
             this.borrowbutton = new System.Windows.Forms.Button();
-            this.attitudelabel = new System.Windows.Forms.Label();
+            this.statelabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BookCoverpictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,14 +60,14 @@
             this.booknamelabel.TabIndex = 1;
             this.booknamelabel.Text = "书名：";
             // 
-            // ISBNlabel
+            // label1
             // 
-            this.ISBNlabel.AutoSize = true;
-            this.ISBNlabel.Location = new System.Drawing.Point(131, 62);
-            this.ISBNlabel.Name = "ISBNlabel";
-            this.ISBNlabel.Size = new System.Drawing.Size(69, 15);
-            this.ISBNlabel.TabIndex = 3;
-            this.ISBNlabel.Text = "ISBN号：";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(131, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "ISBN号：";
             // 
             // authorlabel
             // 
@@ -87,35 +89,38 @@
             // 
             // borrowbutton
             // 
-            this.borrowbutton.Location = new System.Drawing.Point(445, 131);
+            this.borrowbutton.Location = new System.Drawing.Point(443, 131);
             this.borrowbutton.Name = "borrowbutton";
             this.borrowbutton.Size = new System.Drawing.Size(75, 23);
             this.borrowbutton.TabIndex = 7;
             this.borrowbutton.Text = "借阅";
             this.borrowbutton.UseVisualStyleBackColor = true;
+            this.borrowbutton.Click += new System.EventHandler(this.borrowbutton_Click);
             // 
-            // attitudelabel
+            // statelabel
             // 
-            this.attitudelabel.AutoSize = true;
-            this.attitudelabel.Location = new System.Drawing.Point(131, 116);
-            this.attitudelabel.Name = "attitudelabel";
-            this.attitudelabel.Size = new System.Drawing.Size(37, 15);
-            this.attitudelabel.TabIndex = 8;
-            this.attitudelabel.Text = "状态";
+            this.statelabel.AutoSize = true;
+            this.statelabel.Location = new System.Drawing.Point(131, 116);
+            this.statelabel.Name = "statelabel";
+            this.statelabel.Size = new System.Drawing.Size(37, 15);
+            this.statelabel.TabIndex = 8;
+            this.statelabel.Text = "状态";
             // 
             // BookInfoUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.attitudelabel);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.statelabel);
             this.Controls.Add(this.borrowbutton);
             this.Controls.Add(this.BookCoverpictureBox);
             this.Controls.Add(this.ISBNnumlabel);
             this.Controls.Add(this.authorlabel);
-            this.Controls.Add(this.ISBNlabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.booknamelabel);
             this.Name = "BookInfoUserControl";
-            this.Size = new System.Drawing.Size(523, 162);
+            this.BorderStyle = BorderStyle.FixedSingle;
+            this.Size = new System.Drawing.Size(521, 160);
             this.Load += new System.EventHandler(this.BookInfoUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BookCoverpictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -125,12 +130,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox BookCoverpictureBox;
-        private System.Windows.Forms.Label booknamelabel;
-        private System.Windows.Forms.Label ISBNlabel;
-        private System.Windows.Forms.Label authorlabel;
-        private System.Windows.Forms.Label ISBNnumlabel;
-        private System.Windows.Forms.Button borrowbutton;
-        private System.Windows.Forms.Label attitudelabel;
+        public System.Windows.Forms.PictureBox BookCoverpictureBox;
+        public System.Windows.Forms.Label booknamelabel;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label authorlabel;
+        public System.Windows.Forms.Label ISBNnumlabel;
+        public System.Windows.Forms.Button borrowbutton;
+        public System.Windows.Forms.Label statelabel;
+
     }
 }

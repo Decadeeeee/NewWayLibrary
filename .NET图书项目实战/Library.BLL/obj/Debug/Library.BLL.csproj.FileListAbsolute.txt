@@ -4,11 +4,11 @@ D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.BLL.dll
 D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.BLL.pdb
 D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Labrary.Models.dll
 D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.DAL.dll
-D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.View.Model.dll
 D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Labrary.Models.pdb
 D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.DAL.pdb
-D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.View.Model.pdb
 D:\VS2019Project\.NET图书项目实战\Library.BLL\obj\Debug\Library.BLL.csproj.CopyComplete
 D:\VS2019Project\.NET图书项目实战\Library.BLL\obj\Debug\Library.BLL.dll
 D:\VS2019Project\.NET图书项目实战\Library.BLL\obj\Debug\Library.BLL.pdb
 D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.BLL.dll.config
+D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.View.Models.dll
+D:\VS2019Project\.NET图书项目实战\Library.BLL\bin\Debug\Library.View.Models.pdb

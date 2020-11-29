@@ -47,6 +47,7 @@
             this.活跃读者统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.失信读者统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Userpanel = new System.Windows.Forms.Panel();
+            this.BookinfolistView = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
             this.authortextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -218,12 +219,23 @@
             this.Userpanel.Controls.Add(this.label1);
             this.Userpanel.Controls.Add(this.booknametextBox);
             this.Userpanel.Controls.Add(this.UsermenuStrip);
+            this.Userpanel.Controls.Add(this.BookinfolistView);
             this.Userpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Userpanel.Location = new System.Drawing.Point(0, 0);
             this.Userpanel.Name = "Userpanel";
             this.Userpanel.Size = new System.Drawing.Size(831, 495);
             this.Userpanel.TabIndex = 9;
             this.Userpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Userpanel_Paint);
+            // 
+            // BookinfolistView
+            // 
+            this.BookinfolistView.HideSelection = false;
+            this.BookinfolistView.Location = new System.Drawing.Point(18, 120);
+            this.BookinfolistView.Name = "BookinfolistView";
+            this.BookinfolistView.Size = new System.Drawing.Size(534, 96);
+            this.BookinfolistView.TabIndex = 17;
+            this.BookinfolistView.UseCompatibleStateImageBehavior = false;
+            this.BookinfolistView.SelectedIndexChanged += new System.EventHandler(this.BookinfolistView_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -305,7 +317,7 @@
             this.密码修改ToolStripMenuItem,
             this.系统管理ToolStripMenuItem1});
             this.管理功能ToolStripMenuItem1.Name = "管理功能ToolStripMenuItem1";
-            this.管理功能ToolStripMenuItem1.Size = new System.Drawing.Size(83, 26);
+            this.管理功能ToolStripMenuItem1.Size = new System.Drawing.Size(83, 24);
             this.管理功能ToolStripMenuItem1.Text = "管理功能";
             // 
             // 图书借阅管理ToolStripMenuItem
@@ -334,6 +346,7 @@
             this.密码修改ToolStripMenuItem.Name = "密码修改ToolStripMenuItem";
             this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
             this.密码修改ToolStripMenuItem.Text = "密码修改";
+            this.密码修改ToolStripMenuItem.Click += new System.EventHandler(this.密码修改ToolStripMenuItem_Click_1);
             // 
             // 系统管理ToolStripMenuItem1
             // 
@@ -362,7 +375,7 @@
             this.读者借阅情况ToolStripMenuItem,
             this.查询图书借阅情况ToolStripMenuItem});
             this.查询功能ToolStripMenuItem.Name = "查询功能ToolStripMenuItem";
-            this.查询功能ToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
+            this.查询功能ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.查询功能ToolStripMenuItem.Text = "查询功能";
             // 
             // 读者借阅情况ToolStripMenuItem
@@ -382,12 +395,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 495);
-            this.Controls.Add(this.Userpanel);
             this.Controls.Add(this.ManagermenuStrip);
+            this.Controls.Add(this.Userpanel);
             this.MainMenuStrip = this.ManagermenuStrip;
             this.Name = "MainForm";
             this.Text = "图书馆";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ManagermenuStrip.ResumeLayout(false);
             this.ManagermenuStrip.PerformLayout();
             this.Userpanel.ResumeLayout(false);
@@ -439,5 +453,6 @@
         private System.Windows.Forms.ToolStripMenuItem 查询功能ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 读者借阅情况ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查询图书借阅情况ToolStripMenuItem;
+        private System.Windows.Forms.ListView BookinfolistView;
     }
 }

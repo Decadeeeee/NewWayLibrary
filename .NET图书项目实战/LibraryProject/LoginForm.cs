@@ -33,19 +33,23 @@ namespace LibraryProject
 
         private void Loginbutton_Click(object sender, EventArgs e)
         {
-            string id = CounttextBox.Text.Trim();
-            string pwd = PasswordtextBox.Text.Trim();
-
-            Manager = LoginService.CheckLogin(id,pwd);
-
-            if(Manager.Managerid==id&&Manager.ManagerPassword==pwd)
+            if(CounttextBox.Text.Length>0|| PasswordtextBox.Text.Length>0)
             {
-                MainForm mainForm = new MainForm(this);
-                mainForm.Show();
-                this.Hide();
+                string id = CounttextBox.Text.Trim();
+                string pwd = PasswordtextBox.Text.Trim();
 
+                Manager = LoginService.CheckLogin(id, pwd);
+
+                if (Manager.Managerid == id && Manager.ManagerPassword == pwd)
+                {
+                    MainForm mainForm = new MainForm(this);
+                    mainForm.Show();
+                    this.Hide();
+
+                }
+                else MessageBox.Show("账号密码错误");
             }
-            else MessageBox.Show("账号密码错误");
+            
         }
 
     }

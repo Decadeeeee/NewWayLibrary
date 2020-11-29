@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using System.Configuration;
 namespace Library.DAL
 {
-    class DBHelper
+    public class DBHelper
     {
-        private static string _sqlStr = ConfigurationManager.ConnectionStrings["Library"].ToString();
+        private static string conStr = ConfigurationManager.ConnectionStrings["Library"].ToString();
 
         /// <summary>
         /// 数据库连接对象
@@ -22,7 +22,7 @@ namespace Library.DAL
         public static SqlConnection Con
         { get {
                 if (_con == null)
-                    _con = new SqlConnection(_sqlStr);
+                    _con = new SqlConnection(conStr);
                 if (_con.State != System.Data.ConnectionState.Open)
                     _con.Open();
                 return _con;
@@ -44,7 +44,7 @@ namespace Library.DAL
 
         /// <summary>
         /// 执行Sql，返回执行结果
-        /// 如果ExecuteNonQuery结果大于0，则代表查询成功返回true
+        /// 如果ExecuteNonQuery结果大于0，则代表成功返回true
         /// 否则返回false
         /// </summary>
         /// <param name="sql"></param>
@@ -58,8 +58,7 @@ namespace Library.DAL
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return false;
+                throw ex;
             }
             finally
             {
@@ -117,7 +116,7 @@ namespace Library.DAL
         public static DataSet GetSet(string sql)
         {
             DataSet dataSet = new DataSet();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql, _sqlStr);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql, conStr);
             sqlDataAdapter.Fill(dataSet);
             return dataSet;
         }
@@ -130,7 +129,7 @@ namespace Library.DAL
         public static DataTable GetTable(string sql)
         {
             DataTable dataTable = new DataTable();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql, _sqlStr);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql, conStr);
             sqlDataAdapter.Fill(dataTable);
             return dataTable;
         }

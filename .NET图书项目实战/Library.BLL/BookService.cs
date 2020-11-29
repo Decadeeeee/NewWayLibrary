@@ -9,7 +9,7 @@ using Library.View.Models;
 
 namespace Library.BLL
 {
-    class BookService
+    public class BookService
     {
         public static List<BookInfo> GetBookInfo()
         {
